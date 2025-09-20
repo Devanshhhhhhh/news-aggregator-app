@@ -1,0 +1,25 @@
+.home-footer {
+  background-color: #3d3d4e;
+  color: #f1f1f1;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #5fa8d3;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #cae9ff;
+}
+
+.reserved-rights {
+    color: white;
+}
+
+.footer-links span {
+  color: #666;
+}

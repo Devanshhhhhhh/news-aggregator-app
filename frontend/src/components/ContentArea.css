@@ -1,0 +1,55 @@
+.content-area {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+    margin-top: 8rem;
+}
+
+/* skeleton shimmer styles */
+.skeleton-card {
+  background: #f6f7f8;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  height: 300px; /* same as card height */
+}
+
+.skeleton-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150px;
+  height: 100%;
+  width: 150px;
+  background: linear-gradient(
+    90deg,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,0.3) 50%,
+    rgba(255,255,255,0) 100%
+  );
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { left: -150px; }
+  100% { left: 100%; }
+}
+
+.skeleton-image {
+  width: 100%;
+  height: 150px;
+  background-color: #e2e2e2;
+}
+
+.skeleton-text {
+  height: 15px;
+  width: 80%;
+  background-color: #e2e2e2;
+  margin: 10px auto;
+  border-radius: 4px;
+}
+
+.skeleton-text.short {
+  width: 60%;
+}

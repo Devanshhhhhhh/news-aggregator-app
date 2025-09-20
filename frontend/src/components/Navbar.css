@@ -1,0 +1,107 @@
+.nav {
+    width: 100%;
+    height: 4.5rem;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    color: white;
+    background-image: linear-gradient(90deg, #1A1A2E, #16213E);
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.logo-name{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    border-radius: 15px;
+    padding: 0.3rem 0.8rem;
+    border: none;
+    outline: none;
+    font-size: 0.8rem;
+    transition: border 0.3s ease;
+    max-width: 100%;
+}
+
+.search-input:hover {
+    background-color: #f7f5ff;
+    box-shadow: 0 0 5px rgba(205, 197, 241, 0.8);
+}
+
+.search-button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem 0.5rem;
+}
+
+.search-button:hover {
+    color: #c5c8f1;
+}
+
+.account-button{
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.1rem 0.5rem;
+}
+
+.account-button:hover {
+    color: #cec5f1;
+}
+
+/* --- Account dropdown --- */
+.account-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  background-color: white;
+  min-width: 150px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  padding: 0.5rem 0;
+  z-index: 20;
+}
+
+.dropdown a {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #333;
+  font-size: 0.9rem;
+}
